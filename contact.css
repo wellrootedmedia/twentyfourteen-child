@@ -1,0 +1,45 @@
+/* Forms */
+#contact-input label {
+    display: block;
+    float: left;
+    clear: both;
+    text-align: left;
+    margin: 0.6em 5px 0 0;
+    width: 20%;
+}
+
+#contact-input input, #contact-input select, #contact-input textarea {
+    float: left;
+    margin: 1em 0 0 0;
+    width: 57%;
+}
+
+#contact-input input {
+    border: 1px solid #666;
+}
+
+#contact-input input[type=radio], #contact-input input[type=checkbox], #contact-input input[type=submit], #contact-input input[type=reset], #contact-input input[type=button], #contact-input input[type=image] {
+    width: auto;
+}
+
+.error {
+    background: #d33;
+    color: white;
+    padding: 5px;
+    margin-top: 5px
+}
+
+#submitButton {
+    width: 15%;
+    cursor: pointer;
+    margin-right: 18px
+}
+
+#resetButton {
+    width: 15%;
+    cursor: pointer;
+}
+
+.clr {
+    clear: both;
+}
