@@ -1,17 +1,5 @@
 <?php
 
-//add_theme_support( 'post-thumbnails' );
-/*
-if ( function_exists( 'add_theme_support' ) ) {
-	add_theme_support( 'homepage-thumb' );
-    set_post_thumbnail_size( 945, 460 );
-}
-
-if ( function_exists( 'add_image_size' ) ) { 
-	add_image_size( 'homepage-thumb',945, 460, true );
-}
-*/
-
 add_theme_support( 'post-thumbnails' );
 add_image_size( 'homepage-thumb', 945, 460, true );
 
