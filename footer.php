@@ -25,27 +25,6 @@
 
 
 
-
-<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-if($paged == 1) : ?>
-<!--    <link rel="stylesheet" href="--><?php //echo get_stylesheet_directory_uri(); ?><!--/lean-slider/style.css" type="text/css" media="screen" />-->
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/lean-slider/scripts/modernizr-2.6.1.min.js"></script>
-    <script src="<?php echo get_stylesheet_directory_uri(); ?>/lean-slider/lean-slider.js"></script>
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/lean-slider/lean-slider.css" type="text/css" />
-    <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/lean-slider/sample-styles.css" type="text/css" />
-
-    <script type="text/javascript">
-        jQuery(function(){
-            var slider = jQuery('#slider').leanSlider({
-                directionNav: '#slider-direction-nav',
-                controlNav: '#slider-control-nav'
-            });
-        });
-    </script>
-<?php endif; ?>
-
-
-
 <!-- AJAX Contact Form Stylesheet -->
 <link href="<?php echo get_stylesheet_directory_uri(); ?>/assets/css/contact.css" rel="stylesheet" type="text/css" />
 <!-- AJAX Form Submit -->
