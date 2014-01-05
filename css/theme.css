@@ -30,6 +30,10 @@
     clear:both;
 }
 
+.site-content .entry-header, .site-content .entry-content, .site-content .entry-summary, .site-content .entry-meta, .page-content {
+    max-width: 100%;
+}
+
 .description {
     position: relative;
     top: 12px;

@@ -17,7 +17,9 @@ $featuredVids = query_posts(
                 $total_images = count($images);
                 $image = array_shift($images);
                 $image_img_tag = wp_get_attachment_image($image->ID, 'homepage-thumb');
+                echo '<a href="'.get_permalink($featuredVid->ID).'">';
                 echo $image_img_tag;
+                echo '</a>';
             endif;
             $i++;
         endforeach;
