@@ -1,4 +1,6 @@
 /* Forms */
+
+
 #contact-input label {
     display: block;
     float: left;
@@ -42,4 +44,15 @@
 
 .clr {
     clear: both;
+}
+
+#contact {
+    display: block;
+    width: 100%;
+    /*margin: 50px 10px;*/
+    padding: 15px;
+    border: 1px solid #cbcbcb;
+    background-color: #FFF;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }

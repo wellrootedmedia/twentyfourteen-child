@@ -1,20 +1,6 @@
-/* Remove this when pasting into your Stylesheet! */
-
-html, body {
-    border: 0;
-    margin: 0;
-    padding: 0;
+.entry-content.entry-contact {
+    max-width: 100%;
 }
-
-body {
-    /*font: 62.5% "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;*/
-    min-width: 100%;
-    min-height: 101%;
-    color: #666;
-    background: #eee;
-}
-
-/* END Remove This */
 
 #contact p, label, legend {
     /*font: 1.5em "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif;*/
@@ -37,9 +23,9 @@ body {
 
 #contact {
     display: block;
-    /*width: 650px;*/
-    margin: 50px 10px;
-    padding: 35px;
+    width: 100%;
+    /*margin: 50px 10px;*/
+    padding: 15px;
     border: 1px solid #cbcbcb;
     background-color: #FFF;
     -moz-border-radius: 5px;
