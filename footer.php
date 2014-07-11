@@ -19,6 +19,7 @@
 			<div class="site-info">
 				<?php //do_action( 'twentyfourteen_credits' ); ?>
 				<?php echo date("Y"); ?> <a href="<?php echo esc_url( __( bloginfo('url'), 'twentyfourteen' ) ); ?>"><?php printf( __( '%s', 'twentyfourteen' ), _e(bloginfo('name'))); ?></a>
+                <a style="float: right;" href="<?php echo get_permalink(3625); ?>">Privacy Policy</a>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
@@ -117,34 +118,6 @@
 
 
 
-    });
-</script>
-
-<link href="<?php echo get_stylesheet_directory_uri(); ?>/basic-slide/slider-style.css" rel="stylesheet" type="text/css" />
-<script src="<?php echo get_stylesheet_directory_uri(); ?>/basic-slide/jquery.slides.min.js"></script>
-<script>
-    jQuery(function () {
-        jQuery('#slides').slidesjs({
-            width: 945,
-            height: 460,
-            play: {
-                active: false,
-                // [boolean] Generate the play and stop buttons.
-                // You cannot use your own buttons. Sorry.
-                effect: "slide",
-                // [string] Can be either "slide" or "fade".
-                interval: 4000,
-                // [number] Time spent on each slide in milliseconds.
-                auto: true,
-                // [boolean] Start playing the slideshow on load.
-                swap: true,
-                // [boolean] show/hide stop and play buttons
-                pauseOnHover: false,
-                // [boolean] pause a playing slideshow on hover
-                restartDelay: 2500
-                // [number] restart delay on inactive slideshow
-            }
-        });
     });
 </script>
 

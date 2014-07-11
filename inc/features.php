@@ -1,9 +1,4 @@
 <?php
-
-add_theme_support( 'post-thumbnails' );
-add_image_size( 'homepage-thumb', 945, 460, true );
-
-
 add_filter( 'wp_page_menu_args', 'home_page_menu_args' );
 function home_page_menu_args( $args ) {
     $args['show_home'] = true;
@@ -73,20 +68,8 @@ function remove_src_version ( $src ) {
 
 }
 
-add_action( 'init', 'redirect_non_admin_users' );
-function redirect_non_admin_users() {
-    if ( is_admin() && ! current_user_can( 'manage_options' ) &&
-        ! ( defined( 'DOING_AJAX' ) && DOING_AJAX ) ) {
-        wp_redirect( home_url() );
-        exit;
-    }
-}
 
 
-
-/*
- * TODO: this stuff below
- */
 //$result = add_role(
 //    'photo_contributor',
 //    __( 'Photo Contributor' ),
@@ -109,7 +92,18 @@ function redirect_non_admin_users() {
 
 //add_action('after_setup_theme', 'remove_admin_bar');
 //function remove_admin_bar() {
-//    if (!current_user_can('administrator')) {
+//    if (!current_user_can('administrator') && !is_admin()) {
 //        show_admin_bar(false);
+//    }
+//}
+/*
+ * TODO: fix this for redirecting non-admins from wp-admin area
+ * this is messing up the stream as of now.
+ */
+//add_action( 'admin_init', 'redirect_non_admin_users' );
+//function redirect_non_admin_users() {
+//    if ( ! current_user_can( 'manage_options' ) || ! is_admin()) {
+//        wp_redirect( home_url() );
+//        exit;
 //    }
 //}

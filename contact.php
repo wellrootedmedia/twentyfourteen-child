@@ -22,7 +22,7 @@ get_header(); ?>
                     the_title( '<header class="entry-header"><h1 class="entry-title">', '</h1></header><!-- .entry-header -->' );
                     ?>
 
-                    <div class="entry-content entry-contact">
+                    <div class="entry-content">
                         <div id="contact">
 
                             <div id="message"></div>
@@ -32,13 +32,13 @@ get_header(); ?>
                                 <fieldset>
 
                                     <legend>Please fill in the following form to contact Well Rooted Media</legend>
-                                    <label for="name" accesskey="U"><span class="required">*</span>Your Name</label>
+                                    <label for="name" accesskey="U"><span class="required">*</span> Your Name</label>
                                     <input name="name" type="text" id="name" size="30" value="" />
                                     <br />
-                                    <label for="email" accesskey="E"><span class="required">*</span>Email</label>
+                                    <label for="email" accesskey="E"><span class="required">*</span> Email</label>
                                     <input name="email" type="text" id="email" size="30" value="" />
                                     <br />
-                                    <label for="phone" accesskey="P"><span class="required">*</span>Phone</label>
+                                    <label for="phone" accesskey="P"><span class="required">*</span> Phone</label>
                                     <input name="phone" type="text" id="phone" size="30" value="" />
                                     <br />
                                     <label for="subject" accesskey="S">Subject</label>
@@ -48,7 +48,7 @@ get_header(); ?>
                                         <option value="Photo Manipulation">Photo Manipulation</option>
                                     </select>
                                     <br />
-                                    <label for="comments" accesskey="C"><span class="required">*</span>Message</label>
+                                    <label for="comments" accesskey="C"><span class="required">*</span> Your comments</label>
                                     <textarea name="comments" cols="40" rows="3" id="comments"></textarea>
                                     <br />
                                     <!--                <label for="agree" class="checkbox" accesskey="A"><span class="required">*</span> Agree to terms?</label>-->
